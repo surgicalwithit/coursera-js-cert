@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript Basic Challenges: Function Challenge 5</title>
+</head>
+<body>
+    <h1>JavaScript Basic Function Challenges</h1>
+    <h2>Challenge 5</h2>
+    <script>
+        var yourName = prompt("What is your name?", "")
+        function hello(name){
+            var greeting;
+            if(name == null || name == ''){
+                greeting =`You didnt give me a name`
+            } else{
+                greeting = `Hello ${yourName}, and welcome!`
+            }
+            return greeting
+        }
+        console.log(hello(yourName))
+    </script>
+</body>
+</html>
